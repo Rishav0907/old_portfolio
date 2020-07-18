@@ -170,7 +170,7 @@ body{
 }
 #main-body-info{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #111111;
     position: relative;
 }
@@ -192,6 +192,52 @@ body{
     font-size: 35px;
     font-family: 'Lato';
 }
+.container{
+    position: absolute;
+    left: 25rem;
+    top: 8rem;
+}
+#i-am-2{
+    color: white;
+    font-family: 'Lato';
+    font-size: 19px;
+    text-transform: uppercase;
+}
+#bio{
+    color: white;
+    font-family: 'Lato';
+    font-size: 25px;
+    line-height: 35px;
+}
+#inner-container{
+    margin-top: 30px;
+}
+.bio-data{
+    font-family: 'Lato';
+    line-height: 30px;
+    color: $spc-text;
+}
+#resume{
+    &:link,
+    &:visited{
+        margin-top: 30px;
+        padding: 15px;
+        text-transform: uppercase;
+        background-color: $spc-text;
+        font-size: 20px;
+        font-family: 'Lato';
+        border-radius: 10px;
+        text-decoration: none;
+        display: inline-block;
+        color: black;
+        position: absolute;
+    }
+    &:hover{
+        transform: translateY(3px);
+        box-shadow: 0 10px 20px rgba(#181818, 0.2);
+    }
+}
+
 @keyframes blink{
     0%{
         opacity: 0;
@@ -225,6 +271,230 @@ body{
     #about-me{
         left: 0;
         margin-left: 30px;
+    }
+    .menu{
+        display: block;
+        left: 80%;
+        top: 5%;
+        cursor: pointer;
+        z-index: 4;
+        position: fixed;
+    }
+    .channel{
+        position: absolute;
+        height: 95vh;
+        width: 100%;
+        display: block;
+        background-color: rgba($dark-black,0.96);
+        clip-path: circle(60px at 90% -10%);
+        -webkit-clip-path: circle(60px at 90% -10%);
+        transition: all 1s ease-out;
+        // z-index: 2;
+        position: fixed;
+    }
+    .channel.open{
+        position: absolute;
+        height: 95vh;
+        width: 100%;
+        background-color: rgba($dark-black,0.93);
+        clip-path: circle(1400px at 90% -10%);
+        -webkit-clip-path: circle(1400px at 90% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        position: fixed;
+    }
+    .nav-list-second{
+        display: block;
+        position: absolute;
+        left: 45%;
+        top: 18%;
+        // z-index: 5;
+    }
+    .items-link-sec:link,
+    .items-link-sec:visited{
+        font-family: 'Lato';
+        display: block;
+        list-style-type: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 30px;
+        padding: 15px;
+        margin-bottom: 20px ;
+        text-align: center;
+        z-index: 4;
+        color: $spc-text;
+    }
+    #main-body-info{
+        height: 100vh;
+    }
+    .contacts-2{
+        position: absolute;
+        top: 68vh;
+        left: 34rem;
+        z-index: 10;
+    }
+    .contact-items-2:link{
+        cursor: pointer;
+        z-index: 10;
+    }
+    .container{
+        left: 0;
+        #i-am-2{
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        #bio{
+            font-size: 30px;
+            margin: 0 20px;
+        }
+        #inner-container{
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        #resume{
+            left: 20px;
+        }
+    }
+
+}
+@media only screen and (max-width:800px)
+{
+    *{
+        max-width: 100%;
+    }
+    #side-panel{
+        display: none;
+    }
+
+    .my-image{
+        left: 40%;
+    }
+    .i-am .changing{
+        display: inline;
+    }
+    .main-body-text{
+        left: 35%;
+    }
+    #main-info{
+        left: 0;
+        margin-left: 23px;
+    }
+    #about-me{
+        left: 0;
+        margin-left: 20px;
+    }
+    .menu{
+        display: block;
+        left: 80%;
+        top: 5%;
+        cursor: pointer;
+        z-index: 4;
+        position: fixed;
+    }
+    .channel{
+        position: absolute;
+        height: 95vh;
+        width: 100%;
+        display: block;
+        background-color: rgba($dark-black,0.96);
+        clip-path: circle(60px at 90% -10%);
+        -webkit-clip-path: circle(60px at 90% -10%);
+        transition: all 1s ease-out;
+        // z-index: 2;
+        position: fixed;
+    }
+    .channel.open{
+        position: absolute;
+        height: 95vh;
+        width: 100%;
+        background-color: rgba($dark-black,0.93);
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        transition: all 1s ease-out;
+        z-index: 2;
+        position: fixed;
+    }
+    .nav-list-second{
+        display: block;
+        position: absolute;
+        left: 42%;
+        top: 18%;
+    }
+    .items-link-sec:link,
+    .items-link-sec:visited{
+        font-family: 'Lato';
+        display: block;
+        list-style-type: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+        margin-bottom: 20px ;
+        text-align: center;
+        z-index: 4;
+        color: $spc-text;
+    }
+    .contacts-2{
+        position: absolute;
+        top: 73vh;
+        left: 18.7rem;
+        z-index: 10;
+    }
+    .contact-items-2:link{
+        cursor: pointer;
+        z-index: 10;
+    }
+    #main-body-info{
+        height: 145vh;
+    }
+    .container{
+        left: 0;
+        #i-am-2{
+            font-size: 15px;
+            margin: 0 20px;
+        }
+        #bio{
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        #inner-container{
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #resume{
+            left: 20px;
+        }
+    }
+}
+@media only screen and (max-width:500px)
+{
+    *{
+        max-width: 100%;
+    }
+    #side-panel{
+        display: none;
+    }
+
+    .my-image{
+        left: 27%;
+    }
+    .i-am .changing{
+        display: inline;
+    }
+    .about-me{
+        left: 20%;
+    }
+    .first-name{
+        font-size: 35px;
+    }
+    .last-name{
+        font-size: 35px;
+    }
+    .main-body-text{
+        left: 25%;
+        font-size: smaller;
     }
     .menu{
         display: block;
@@ -289,54 +559,32 @@ body{
         cursor: pointer;
         z-index: 10;
     }
-
-}
-@media only screen and (max-width:800px)
-{
-    *{
-        max-width: 100%;
+    #main-body-info{
+        height: 150vh;
     }
-    #side-panel{
-        display: none;
+    #main-info{
+        margin-left: 23px;
     }
-
-    .my-image{
-        left: 40%;
+    #about-me{
+        margin-left: 20px;
     }
-    .i-am .changing{
-        display: inline;
-    }
-    .main-body-text{
-        left: 35%;
-    }
-}
-@media only screen and (max-width:500px)
-{
-    *{
-        max-width: 100%;
-    }
-    #side-panel{
-        display: none;
-    }
-
-    .my-image{
-        left: 27%;
-    }
-    .i-am .changing{
-        display: inline;
-    }
-    .about-me{
-        left: 20%;
-    }
-    .first-name{
-        font-size: 35px;
-    }
-    .last-name{
-        font-size: 35px;
-    }
-    .main-body-text{
-        left: 25%;
-        font-size: smaller;
+    .container{
+        left: 0;
+        #i-am-2{
+            font-size: 15px;
+            margin: 0 20px;
+        }
+        #bio{
+            font-size: 20px;
+            margin: 0 20px;
+        }
+        #inner-container{
+            font-size: 15px;
+            margin-left: 20px;
+        }
+        #resume{
+            left: 20px;
+        }
     }
 }
 
