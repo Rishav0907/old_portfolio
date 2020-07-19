@@ -65,6 +65,8 @@ menu.addEventListener('click',function()
 
 var home=document.querySelector('.home');
 var about=document.querySelector('.about')
+var service=document.querySelector('.service')
+var portfolio=document.querySelector('.portfolio')
 home.addEventListener('click',function()
 {
   // console.log("clicked")
@@ -73,5 +75,38 @@ home.addEventListener('click',function()
 about.addEventListener('click',function()
 {
   console.log("clicked")
-  window.scrollTo(0,750)
+  window.scrollTo(0,630)
+})
+service.addEventListener('click',function()
+{
+  window.scrollTo(630,1350)
+})
+portfolio.addEventListener('click',function()
+{
+  window.scrollTo(0,2450)
+})
+var home2=document.querySelector('.home2');
+var about2=document.querySelector('.about2')
+var skills2=document.querySelector('.skills2')
+var portfolio2=document.querySelector('.portfolio2')
+
+home2.addEventListener('click',function()
+{
+  window.scrollTo(top)
+  channel.classList.remove('open')
+})
+about2.addEventListener('click',function()
+{
+  window.scrollTo(0,700)
+  channel.classList.remove('open')
+})
+skills2.addEventListener('click',function()
+{
+  window.scrollTo(0,1730)
+  channel.classList.remove('open')
+})
+portfolio2.addEventListener('click',function()
+{
+  window.scrollTo(0,4500)
+  channel.classList.remove('open')
 })

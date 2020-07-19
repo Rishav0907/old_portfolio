@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -250,6 +251,152 @@ body {
   box-shadow: 0 10px 20px rgba(24, 24, 24, 0.2);
 }
 
+#service {
+  height: 180vh;
+  background-color: #000000;
+  position: relative;
+  width: 100%;
+}
+
+#service #what-i-do {
+  position: absolute;
+  color: #ff1493;
+  left: 25rem;
+  top: 35px;
+  font-size: 15px;
+  font-family: 'Lato';
+  text-transform: uppercase;
+}
+
+#service #skills-and-services {
+  position: absolute;
+  color: white;
+  left: 25rem;
+  top: 60px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 35px;
+}
+
+#service .container-fluid {
+  position: absolute;
+  left: 24rem;
+  top: 10rem;
+}
+
+#service .container-fluid .card {
+  height: 23rem;
+  width: 16rem;
+  background-color: #111111;
+  display: inline-block;
+  margin: 20px 25px;
+  position: relative;
+  padding: 2px;
+}
+
+#service .container-fluid .skill-icon {
+  position: absolute;
+  top: 20px;
+  left: 37%;
+  font-size: 40px;
+  color: #ff1493;
+}
+
+#service .container-fluid .skill-name {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  left: 28px;
+}
+
+#service .container-fluid .skill-description {
+  color: white;
+  font-family: 'Lato';
+  position: absolute;
+  font-size: 17px;
+  top: 5rem;
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin: 40px 25px;
+  padding: 0 5px;
+}
+
+#portfolio {
+  height: 180vh;
+  background-color: #111111;
+  position: relative;
+  width: 100%;
+}
+
+#portfolio #my-works {
+  position: absolute;
+  color: #ff1493;
+  left: 25rem;
+  top: 35px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+}
+
+#portfolio #my-portfolio {
+  position: absolute;
+  color: white;
+  left: 25rem;
+  top: 60px;
+  text-transform: uppercase;
+  font-family: 'Lato';
+  font-size: 35px;
+}
+
+#portfolio .container-fluid {
+  position: absolute;
+  left: 28rem;
+  top: 10rem;
+}
+
+#portfolio .container-fluid .card1 {
+  height: 23rem;
+  width: 17rem;
+  background-color: #000000;
+  display: inline-block;
+  margin: 30px 30px;
+  position: relative;
+  border-radius: 20px;
+}
+
+#portfolio .container-fluid .project-name {
+  position: absolute;
+  color: #ff1493;
+  left: 13%;
+  top: 20px;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#portfolio .container-fluid img.project-image {
+  position: absolute;
+  width: 15rem;
+  height: 15rem;
+  top: 6rem;
+  left: 16px;
+}
+
+#portfolio .container-fluid .code {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Lato';
+  text-decoration: none;
+  top: 93%;
+  left: 35%;
+  font-weight: 800;
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -365,6 +512,13 @@ body {
   .container #resume {
     left: 20px;
   }
+  #service #what-i-do,
+  #service #skills-and-services {
+    left: 30px;
+  }
+  #service .container-fluid {
+    left: 8.5rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -472,6 +626,26 @@ body {
   }
   .container #resume {
     left: 20px;
+  }
+  #service {
+    height: 230vh;
+  }
+  #service #what-i-do,
+  #service #skills-and-services {
+    left: 30px;
+  }
+  #service .container-fluid {
+    left: 70px;
+  }
+  #portfolio {
+    height: 180vh;
+  }
+  #portfolio #my-works,
+  #portfolio #my-portfolio {
+    left: 30px;
+  }
+  #portfolio .container-fluid {
+    left: 15px;
   }
 }
 
@@ -588,5 +762,25 @@ body {
   }
   .container #resume {
     left: 20px;
+  }
+  #service {
+    height: 400vh;
+  }
+  #service #what-i-do,
+  #service #skills-and-services {
+    left: 30px;
+  }
+  #service .container-fluid {
+    left: 30px;
+  }
+  #portfolio {
+    height: 230vh;
+  }
+  #portfolio #my-works,
+  #portfolio #my-portfolio {
+    left: 30px;
+  }
+  #portfolio .container-fluid {
+    left: 15px;
   }
 }

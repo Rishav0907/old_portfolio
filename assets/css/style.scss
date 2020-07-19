@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 $header-color: #181818;
 $font-color: white;
 $light-black: #323232;
@@ -237,6 +238,139 @@ body{
         box-shadow: 0 10px 20px rgba(#181818, 0.2);
     }
 }
+#service{
+    height: 180vh;
+    background-color: $dark-black;
+    position: relative;
+    width: 100%;
+    #what-i-do{
+        position: absolute;
+        color: $spc-text;
+        left: 25rem;
+        top: 35px;
+        font-size: 15px;
+        font-family: 'Lato';
+        text-transform: uppercase;
+    }
+    #skills-and-services{
+        position: absolute;
+        color: white;
+        left: 25rem;
+        top: 60px;
+        text-transform: uppercase;
+        font-family: 'Lato';
+        font-size: 35px;
+    }
+    .container-fluid{
+        position: absolute;
+        left: 24rem;
+        top: 10rem;
+            .card{
+                height: 23rem;
+                width: 16rem;
+                //border: 2px solid white;
+                background-color: #111111;
+                display: inline-block;
+                margin: 20px 25px;
+                position: relative;
+                padding: 2px;
+                }
+            .skill-icon{
+                position: absolute;
+                top: 20px;
+                left: 37%;
+                font-size: 40px;
+                color:#ff1493;
+            }
+            .skill-name{
+                color: white;
+                text-transform: uppercase;
+                font-family: 'Lato';
+                font-size: 20px;
+                position: absolute;
+                //margin: 40px 25px;
+                top: 70px;
+                left: 28px;
+            }
+            .skill-description{
+                color: white;
+                font-family: 'Lato';
+                position: absolute;
+                font-size: 17px;
+                top: 5rem;
+                line-height: 25px;
+                margin-bottom: 20px;
+                margin: 40px 25px;
+                padding: 0 5px;
+            }
+    }
+}
+#portfolio{
+    height: 180vh;
+    background-color: #111111;
+    position: relative;
+    width: 100%;
+    #my-works{
+        position: absolute;
+        color: $spc-text;
+        left: 25rem;
+        top: 35px;
+        text-transform: uppercase;
+        font-family: 'Lato';
+    }
+    #my-portfolio{
+        position: absolute;
+        color: white;
+        left: 25rem;
+        top: 60px;
+        text-transform: uppercase;
+        font-family: 'Lato';
+        font-size: 35px;
+    }
+    .container-fluid{
+        position: absolute;
+        left: 28rem;
+        top: 10rem;
+        .card1{
+            height: 23rem;
+            width: 17rem;
+            background-color: $dark-black;
+            display: inline-block;
+            margin: 30px 30px;
+            position: relative;
+            border-radius: 20px;
+        }
+        .project-name{
+            position: absolute;
+            color: $spc-text;
+            left: 13%;
+            top: 20px;
+            font-family: 'Lato';
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        img.project-image{
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            top: 6rem;
+            left: 16px;
+        }
+        .code{
+            position: absolute;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-family: 'Lato';
+            text-decoration: none;
+            top: 93%;
+            left: 35%;
+            font-weight: 800;
+        }
+    }
+
+}
 
 @keyframes blink{
     0%{
@@ -356,6 +490,15 @@ body{
             left: 20px;
         }
     }
+    #service{
+        #what-i-do,
+        #skills-and-services{
+            left: 30px;
+        }
+        .container-fluid{
+            left: 8.5rem;
+        }
+    }
 
 }
 @media only screen and (max-width:800px)
@@ -465,6 +608,26 @@ body{
         }
         #resume{
             left: 20px;
+        }
+    }
+    #service{
+        height: 230vh;
+        #what-i-do,
+        #skills-and-services{
+            left: 30px;
+        }
+        .container-fluid{
+            left: 70px;
+        }
+    }
+    #portfolio{
+        height: 180vh;
+        #my-works,
+        #my-portfolio{
+            left: 30px;
+        }
+        .container-fluid{
+            left: 15px;
         }
     }
 }
@@ -584,6 +747,26 @@ body{
         }
         #resume{
             left: 20px;
+        }
+    }
+    #service{
+        height: 400vh;
+        #what-i-do,
+        #skills-and-services{
+            left: 30px;
+        }
+        .container-fluid{
+            left: 30px;
+        }
+    }
+    #portfolio{
+        height: 230vh;
+        #my-works,
+        #my-portfolio{
+            left: 30px;
+        }
+        .container-fluid{
+            left: 15px;
         }
     }
 }
